@@ -25,6 +25,10 @@ class Scripture
         {
             Random rnd = new Random();
             int index = rnd.Next(0, _scriptureWords.Count());
+            
+            // Exceeding Requirements:
+            // This if statement checks too see if a word is already hidden,
+            // so that the program only hides new words each time.
             if (_scriptureWords[index].IsHidden() == false)
             {
                 _scriptureWords[index].Hide();
