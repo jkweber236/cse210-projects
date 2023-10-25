@@ -12,9 +12,6 @@ while (userInput != "quit" && scripture.IsCompletelyHidden() == false)
     Console.Clear();
     Console.WriteLine($"{reference.GetReference()} {scripture.GetRenderedText()}");
 
-    // To exceed requirements, I made it so that pressing enter hides three new words
-    // each time, rather than hiding some words that are already hidden. 
-    // The code for this can be found in the scripture class. 
     Console.WriteLine("\nPress enter to continue or type 'quit' to finish:");
 
     userInput = Console.ReadLine();
