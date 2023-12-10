@@ -15,7 +15,7 @@ class Running : Activity
 
     public override double GetSpeed()
     {
-        return 60 / GetPace();
+        return _distance / GetDuration() * 60;
     }
 
     public override double GetPace()

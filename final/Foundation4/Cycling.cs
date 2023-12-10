@@ -22,7 +22,7 @@ class Cycling : Activity
 
     public override double GetPace()
     {
-        return GetDuration() / GetDistance();
+        return 60 / GetSpeed();
     }
 
     public override string GetSummary()

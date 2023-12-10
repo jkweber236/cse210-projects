@@ -13,7 +13,7 @@ class Program
         Cycling cycling = new Cycling("09 Dec 2023", 20, 8);
         activities.Add(cycling);
 
-        Swimming swimming = new Swimming("10 Dec 2023", 40, 50);
+        Swimming swimming = new Swimming("10 Dec 2023", 20, 40);
         activities.Add(swimming);
 
         foreach(Activity activity in activities)
