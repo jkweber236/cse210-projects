@@ -16,7 +16,7 @@ class Program
 
         OrderOne.GetShippingLabel();
         OrderOne.GetPackingLabel();
-        Console.WriteLine($"Order total: ${OrderOne.TotalCost()}\n");
+        Console.WriteLine($"Order total: ${OrderOne.TotalCost():F2}\n");
 
         List<Product> productsTwo = new List<Product>();
         Address addressTwo = new Address("456 Maple Lane", "Toronto", "Ontario", "Canada");
@@ -30,6 +30,6 @@ class Program
 
         OrderTwo.GetShippingLabel();
         OrderTwo.GetPackingLabel();
-        Console.WriteLine($"Order total: ${OrderTwo.TotalCost()}\n");
+        Console.WriteLine($"Order total: ${OrderTwo.TotalCost():F2}\n");
     }
 }
